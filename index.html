@@ -14,9 +14,9 @@
     <header class="header-border">
       <!-- Header -->
       <div class="container header-container">
-      <nav class="page-navigation">
         <a href="./index.html" class="page-logo">Web<span class="accent-color">Studio</span></a>
-        <ul class="menu">
+        <nav class="page-navigation">
+          <ul class="menu">
           <li>
             <a href="./index.html" class="menu-link first-link">Studio</a>
           </li>
@@ -26,8 +26,8 @@
           <li>
             <a href="" class="menu-link">Contacts</a>
           </li>
-        </ul>
-      </nav>
+          </ul>
+        </nav>
       <address class="contact-block">
         <ul class="contact-list">
           <li>
@@ -38,6 +38,11 @@
           </li>
         </ul>
       </address>
+      <button class="btn-burger" type="button">
+        <svg class="icon-burger" width="24" height="24">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
     </div>
     </header>
     <main>
@@ -51,7 +56,7 @@
       <!-- Benefits -->
       <section class="section-paddings benefits">
         <div class="container benefits-container">
-        <h2 class="visually-hidden">Benefits</h2>
+        <h2 class="hidden">Benefits</h2>
         <ul class="benefits-list">
           <li class="benefits-list-item">
             <div class="benefits-list-item-icon-wrapper">
@@ -416,8 +421,8 @@
       </div>
     </footer>
     <!-- Backdrop -->
-    <div class="backdrop is-open">
-      <div class="modal">
+    <div class="backdrop is-open hidden">
+      <div class="modal hidden">
         <button class="modal-close-btn" type="button">
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
