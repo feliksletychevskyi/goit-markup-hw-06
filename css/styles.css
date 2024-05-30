@@ -356,7 +356,6 @@ button {
 
 .hero {
     max-width: 602px;
-    padding: 188px 0;
     background-color: #2e2f42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-background.jpg);
     background-size: cover;
@@ -375,8 +374,7 @@ button {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    margin-bottom: 72px;
-    margin-top: 72px;
+    padding: 72px 0;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -412,6 +410,7 @@ button {
 @media screen and (min-width: 1158px) {
     .hero {
         max-width: 1440px;
+        margin-bottom: 48px;
     }
 
     .hero-container {
@@ -428,8 +427,7 @@ button {
 }
 
 .benefits-container {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding: 120px 0;
 }
 
 .benefits-list {
@@ -464,11 +462,11 @@ button {
     .benefits-list {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 72px;
+        gap: 72px 24px;
     }
 
     .benefits-list-item {
-        flex-basis: calc((100% - 2 * 36px) / 2);
+        flex-basis: calc((100% - 24px) / 2);
     }
 
     .benefits-title {
@@ -550,7 +548,8 @@ button {
 .team-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 72px;
+    gap: 62px 24px;
+    justify-content: center;
 }
 
 .team-member {
@@ -600,9 +599,12 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+    .team-list {
+        justify-content: center;
+    }
+
     .team-member {
-        width: calc((100% - 24px) / 3);
-        margin-left: 60px;
+        width: calc((100% - 3px) / 3);
     }
 }
 
@@ -613,7 +615,7 @@ button {
     }
 
     .team-member-media {
-        gap: 18px;
+        gap: 24px;
     }
 }
 
@@ -640,10 +642,6 @@ button {
     flex-wrap: wrap;
     gap: 24px;
     row-gap: 48px;
-}
-
-.portfolio-list-margin {
-    margin-bottom: 120px;
 }
 
 .portfolio-section-title {
@@ -688,7 +686,7 @@ button {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 24px;
-        row-gap: 72px;
+        row-gap: 48px;
     }
 
     .portfolio-item {
@@ -747,15 +745,12 @@ button {
     gap: 72px;
 }
 
-.footer-logo-wrapper {
-    margin-right: 120px;
-}
-
 .footer-logo {
     display: inline-block;
 }
 
 .footer-text {
+    max-width: 264px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -790,7 +785,6 @@ button {
     stroke-width: 0;
     stroke: currentColor;
     fill: #ffffff;
-    margin: auto;
 }
 
 .icon-footer-link {
@@ -870,29 +864,26 @@ button {
     .footer-wrapper {
         flex-direction: row;
         flex-wrap: wrap;
+        align-items: center;
         gap: 24px;
-    }
-
-    .footer-logo-wrapper, .footer-social-media,
-    .footer-form {
-        width: calc((100% - 48px) / 3);
     }
 
     .footer-form {
         flex-direction: row;
-        margin-left: 120px;
-    }
-
-    .footer-subscribe-headline {
-        margin-left: 120px;
+        align-items: center;
     }
 }
 
 @media screen and (min-width: 1158px) {
     .footer-wrapper {
+        align-items: baseline;
         flex-direction: row;
         flex-wrap: nowrap;
-        gap: 24px;
+        gap: unset;
+    }
+
+    .footer-subscribe {
+        margin-left: auto;
     }
 }
 
