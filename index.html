@@ -167,12 +167,21 @@
         <h2 class="team-title team-section-title">Our Team</h2>
         <ul  class="team-list">
           <li class="team-member">
-            <img
-              srcset="./images/team/img.jpg 1x, ./images/team/img@2x.jpg 2x"
-              src="./images/mark-guerrero.jpg"
+            <picture>
+              <!-- Desktop -->
+              <source media="(min-width: 1158px)" srcset="./images/team/img.jpg 1x,./images/team/img@2x.jpg 2x" type="image/jpg">
+              <!-- Tablet -->
+              <source media="(min-width: 768px)" srcset="./images/team/img.jpg 1x,./images/team/img@2x.jpg 2x" type="image/jpg">
+              <!-- Mobile -->
+              <source media="(max-width: 767px)" srcset="./images/team/img.jpg 1x,./images/team/img@2x.jpg 2x" type="image/jpg">
+              <img
+              src="./images/team/img.jpg"
               alt="mark-guerrero"
               width="264"
+              height="260"
+              loading="lazy"
             />
+            </picture>
           <div class="team-member-info">
             <h3 class="team-member-name">Mark Guerrero</h3>
             <p class="team-member-text">Product Designer</p>
@@ -209,7 +218,21 @@
           </div>
           </li>
           <li class="team-member">
-          <img srcset="./images/team/img-1.jpg 1x, ./images/team/img@2x-1.jpg 2x" src="./images/tom-ford.jpg" alt="tom-ford" width="270" height="260" />
+            <picture>
+              <!-- Desktop -->
+              <source media="(min-width: 1158px)" srcset="./images/team/img-1.jpg 1x,./images/team/img@2x-1.jpg 2x" type="image/jpg">
+              <!-- Tablet -->
+              <source media="(min-width: 768px)" srcset="./images/team/img-1.jpg 1x,./images/team/img@2x-1.jpg 2x" type="image/jpg">
+              <!-- Mobile -->
+              <source media="(max-width: 767px)" srcset="./images/team/img-1.jpg 1x,./images/team/img@2x-1.jpg 2x" type="image/jpg">
+              <img
+              src="./images/team/img-1.jpg"
+              alt="tom-ford"
+              width="264"
+              height="260"
+              loading="lazy"
+            />
+            </picture>
           <div class="team-member-info">
             <h3 class="team-member-name">Tom Ford</h3>
             <p class="team-member-text">Frontend Developer</p>
@@ -246,12 +269,21 @@
           </div>
           </li>
           <li class="team-member">
-            <img
-              srcset="./images/team/img-2.jpg 1x, ./images/team/img@2x-2.jpg 2x"
-              src="./images/camila-garcia.jpg"
+            <picture>
+              <!-- Desktop -->
+              <source media="(min-width: 1158px)" srcset="./images/team/img-2.jpg 1x,./images/team/img@2x-2.jpg 2x" type="image/jpg">
+              <!-- Tablet -->
+              <source media="(min-width: 768px)" srcset="./images/team/img-2.jpg 1x,./images/team/img@2x-2.jpg 2x" type="image/jpg">
+              <!-- Mobile -->
+              <source media="(max-width: 767px)" srcset="./images/team/img-2.jpg 1x,./images/team/img@2x-2.jpg 2x" type="image/jpg">
+              <img
+              src="./images/team/img-2.jpg"
               alt="camila-garcia"
               width="264"
+              height="260"
+              loading="lazy"
             />
+            </picture>
             <div class="team-member-info">
             <h3 class="team-member-name">Camila Garcia</h3>
             <p class="team-member-text">Marketing</p>
@@ -288,12 +320,21 @@
       </div>
           </li>
           <li class="team-member">
-            <img
-              srcset="./images/team/img-3.jpg 1x, ./images/team/img@2x-3.jpg 2x,"
-              src="./images/daniel-wilson.jpg"
+            <picture>
+              <!-- Desktop -->
+              <source media="(min-width: 1158px)" srcset="./images/team/img-3.jpg 1x,./images/team/img@2x-3.jpg 2x" type="image/jpg">
+              <!-- Tablet -->
+              <source media="(min-width: 768px)" srcset="./images/team/img-3.jpg 1x,./images/team/img@2x-3.jpg 2x" type="image/jpg">
+              <!-- Mobile -->
+              <source media="(max-width: 767px)" srcset="./images/team/img-3.jpg 1x,./images/team/img@2x-3.jpg 2x" type="image/jpg">
+              <img
+              src="./images/team/img-3.jpg"
               alt="daniel-wilson"
               width="264"
+              height="260"
+              loading="lazy"
             />
+            </picture>
             <div class="team-member-info">
             <h3 class="team-member-name">Daniel Wilson</h3>
             <p class="team-member-text">UI Designer</p>
@@ -339,7 +380,15 @@
         <ul class="portfolio-list">
           <li class="portfolio-item">
             <div class="portfolio-image-container">
-              <img srcset="./images/portfolio/port-5.jpg 1x, ./images/portfolio/port@2x-5.jpg 2x" src="./images/banking-app.jpg" alt="banking-app" width="360" height="300">
+              <picture>
+                <!-- Desktop -->
+                <source media="(min-width: 1158px)" srcset="./images/portfolio/port-5.jpg 1x,./images/portfolio/port@2x-5.jpg 2x">
+                <!-- Tablet -->
+                <source media="(min-width: 768px)" srcset="./images/portfolio/port-5.jpg 1x,./images/portfolio/port@2x-5.jpg 2x">
+                <!-- Mobile -->
+                <source media="(max-width: 767px)" srcset="./images/portfolio/port-5.jpg 1x,./images/portfolio/port@2x-5.jpg 2x">
+                <img src="./images/portfolio/port-5.jpg" alt="banking-app" width="360" height="300" loading="lazy">
+              </picture>
                 <p class="after">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
@@ -351,7 +400,15 @@
           </li>
           <li class="portfolio-item">
             <div class="portfolio-image-container">
-            <img srcset="./images/portfolio/port-4.jpg 1x, ./images/portfolio/port@2x-4.jpg 2x" src="./images/cashless-payment.jpg" alt="cashless-payment" width="360" height="300">
+              <picture>
+                <!-- Desktop -->
+                <source media="(min-width: 1158px)" srcset="./images/portfolio/port-4.jpg 1x,./images/portfolio/port@2x-4.jpg 2x">
+                <!-- Tablet -->
+                <source media="(min-width: 768px)" srcset="./images/portfolio/port-4.jpg 1x,./images/portfolio/port@2x-4.jpg 2x">
+                <!-- Mobile -->
+                <source media="(max-width: 767px)" srcset="./images/portfolio/port-4.jpg 1x,./images/portfolio/port@2x-4.jpg 2x">
+                <img src="./images/portfolio/port-4.jpg" alt="cashless-payment" width="360" height="300" loading="lazy">
+              </picture>
             <p class="after">
               14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
             </p>
@@ -363,7 +420,15 @@
           </li>
           <li class="portfolio-item">
             <div class="portfolio-image-container">
-            <img srcset="./images/portfolio/port-3.jpg 1x, ./images/portfolio/port@2x-3.jpg 2x" src="./images/meditation-app.jpg" alt="meditation-app" width="360" height="300">
+              <picture>
+                <!-- Desktop -->
+                <source media="(min-width: 1158px)" srcset="./images/portfolio/port-3.jpg 1x,./images/portfolio/port@2x-3.jpg 2x">
+                <!-- Tablet -->
+                <source media="(min-width: 768px)" srcset="./images/portfolio/port-3.jpg 1x,./images/portfolio/port@2x-3.jpg 2x">
+                <!-- Mobile -->
+                <source media="(max-width: 767px)" srcset="./images/portfolio/port-3.jpg 1x,./images/portfolio/port@2x-3.jpg 2x">
+                <img src="./images/portfolio/port-3.jpg" alt="meditation-app" width="360" height="300" loading="lazy">
+              </picture>
             <p class="after">
               14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
             </p>
@@ -375,7 +440,15 @@
           </li>
           <li class="portfolio-item">
             <div class="portfolio-image-container">
-            <img srcset="./images/portfolio/port-2.jpg 1x, ./images/portfolio/port@2x-2.jpg 2x" src="./images/taxi-service.jpg" alt="taxi-service" width="360" height="300">
+              <picture>
+                <!-- Desktop -->
+                <source media="(min-width: 1158px)" srcset="./images/portfolio/port-2.jpg 1x,./images/portfolio/port@2x-2.jpg 2x">
+                <!-- Tablet -->
+                <source media="(min-width: 768px)" srcset="./images/portfolio/port-2.jpg 1x,./images/portfolio/port@2x-2.jpg 2x">
+                <!-- Mobile -->
+                <source media="(max-width: 767px)" srcset="./images/portfolio/port-2.jpg 1x,./images/portfolio/port@2x-2.jpg 2x">
+                <img src="./images/portfolio/port-2.jpg" alt="taxi-service" width="360" height="300" loading="lazy">
+              </picture>
             <p class="after">
               14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
             </p>
@@ -387,7 +460,15 @@
           </li>
           <li class="portfolio-item">
             <div class="portfolio-image-container">
-            <img srcset="./images/portfolio/port-1.jpg 1x, ./images/portfolio/port@2x-1.jpg 2x" src="./images/screen-illustrations.jpg" alt="screen-illustrations" width="360" height="300">
+              <picture>
+                <!-- Desktop -->
+                <source media="(min-width: 1158px)" srcset="./images/portfolio/port-1.jpg 1x,./images/portfolio/port@2x-1.jpg 2x">
+                <!-- Tablet -->
+                <source media="(min-width: 768px)" srcset="./images/portfolio/port-1.jpg 1x,./images/portfolio/port@2x-1.jpg 2x">
+                <!-- Mobile -->
+                <source media="(max-width: 767px)" srcset="./images/portfolio/port-1.jpg 1x,./images/portfolio/port@2x-1.jpg 2x">
+                <img src="./images/portfolio/port-1.jpg" alt="screen-illustrations" width="360" height="300" loading="lazy">
+              </picture>
             <p class="after">
               14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
             </p>
@@ -399,7 +480,15 @@
           </li>
           <li class="portfolio-item">
             <div class="portfolio-image-container">
-            <img srcset="./images/portfolio/port.jpg 1x, ./images/portfolio/port@2x.jpg 2x" src="./images/online-courses.jpg" alt="online-courses" width="360" height="300">
+              <picture>
+                <!-- Desktop -->
+                <source media="(min-width: 1158px)" srcset="./images/portfolio/port.jpg 1x,./images/portfolio/port@2x.jpg 2x">
+                <!-- Tablet -->
+                <source media="(min-width: 768px)" srcset="./images/portfolio/port.jpg 1x,./images/portfolio/port@2x.jpg 2x">
+                <!-- Mobile -->
+                <source media="(max-width: 767px)" srcset="./images/portfolio/port.jpg 1x,./images/portfolio/port@2x.jpg 2x">
+                <img src="./images/portfolio/port.jpg" alt="online-courses" width="360" height="300" loading="lazy">
+              </picture>
             <p class="after">
               14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
             </p>
@@ -463,10 +552,12 @@
               <input class="footer-input" type="email" id="subscribe-email" name="subscribe-email" placeholder="E-mail">
             </label>
             <button class="subscribe-button" type="submit">
-              Subscribe
-              <svg class="subscribe-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-subscribe"></use>
-              </svg>
+              <div class="subscribe-align">
+                Subscribe
+                <svg class="subscribe-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-subscribe"></use>
+                </svg>
+              </div>
             </button>
           </form>
         </div>

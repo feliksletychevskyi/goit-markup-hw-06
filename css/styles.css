@@ -335,7 +335,6 @@ button {
     }
 
     .contact-list-link {
-        margin-right: 40px;
         padding: 24px 0;
         display: block;
         font-weight: 400;
@@ -355,18 +354,54 @@ button {
 /* Hero */
 
 .hero {
-    max-width: 602px;
+    max-width: 1440px;
     background-color: #2e2f42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-background.jpg);
     background-size: cover;
     background-color: #2E2F42;
     background-repeat: no-repeat;
     background-position: center;
+    padding: 72px 0;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .hero {
+        background-image: url('../images/banner/hero@2x.jpg');
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        background-image: url('../images/banner/hero.jpg');
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .hero {
+        background-image: url('../images/banner/hero@2x.jpg');
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .hero {
+        background-image: url('../images/banner/hero.jpg');
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+screen and (min-resolution: 192dpi) and (min-width: 1158px),
+screen and (min-resolution: 2dppx) and (min-width: 1158px) {
+    .hero {
+        background-image: url('../images/banner/hero@2x.jpg');
+    }
 }
 
 .hero-container {
     color: #ffffff;
-    padding: 162px 0;
 }
 
 .main-title {
@@ -400,26 +435,16 @@ button {
 
 @media screen and (min-width: 768px) {
     .hero {
-        max-width: 1050px;
-        margin-bottom: 48px;
+        padding: 112px 0;
     }
 
     .main-title {
         font-size: 56px;
     }
-
-    .hero-container {
-        padding: 188px 0;
-    }
 }
 
 @media screen and (min-width: 1158px) {
     .hero {
-        max-width: 1440px;
-        margin-bottom: 48px;
-    }
-
-    .hero-container {
         padding: 188px 0;
     }
 }
@@ -427,7 +452,7 @@ button {
 /* Benefits */
 
 .benefits {
-    padding: 120px 0;
+    padding: 96px 0;
     background-color: #ffffff;
     color: #ffffff;
 }
@@ -461,6 +486,10 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+    .benefits {
+        padding: 96px 0;
+    }
+
     .benefits-list {
         flex-direction: row;
         flex-wrap: wrap;
@@ -692,7 +721,7 @@ button {
         width: calc((100% - 24px) / 2);
     }
 
-    .portfolio-image-container .after {
+    .portfolio-item .after {
         display: none;
     }
 }
@@ -702,7 +731,7 @@ button {
         width: calc((100% - 48px) / 3);
     }
 
-    .portfolio-image-container .after {
+    .portfolio-item .after {
         position: absolute;
         top: 0;
         left: 0;
@@ -717,7 +746,7 @@ button {
         background-color: #4d5ae5;
     }
 
-    .portfolio-image-container:hover .after {
+    .portfolio-item:hover .after {
         display: block;
         background: #4D5AE5;
         transform: translateY(0);
@@ -864,13 +893,19 @@ button {
     border-radius: 4px;
 }
 
+.subscribe-align {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
 @media screen and (min-width: 768px) {
     .footer-wrapper {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
-        gap: 24px;
+        gap: 72px 24px;
+        padding-left: 108px;
     }
 
     .footer-form {
@@ -923,7 +958,10 @@ button {
     min-height: 584px;
     background-color: #fcfcfc;
     border-radius: 4px;
-    padding: 72px 24px 24px 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 72px;
+    padding-bottom: 16px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -965,7 +1003,6 @@ button {
     text-align: center;
     color: #2e2f42;
     margin-bottom: 16px;
-    margin-top: 44px;
 }
 
 .form-field-wrapper {
