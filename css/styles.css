@@ -98,9 +98,9 @@ button {
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    text-align: center;
     text-transform: uppercase;
     color: #4d5ae5;
-    padding: 16px 0;
     display: block;
 }
 
@@ -233,7 +233,6 @@ button {
 
     .page-logo {
         margin-right: 120px;
-        padding: 24px 0;
     }
 
     .page-navigation {
@@ -356,7 +355,7 @@ button {
 .hero {
     max-width: 1440px;
     background-color: #2e2f42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-background.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/banner/hero-mobile.jpg);
     background-size: cover;
     background-color: #2E2F42;
     background-repeat: no-repeat;
@@ -368,13 +367,13 @@ button {
 screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/banner/hero@2x.jpg');
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/banner/hero-mobile@2x.jpg');
     }
 }
 
 @media screen and (min-width: 768px) {
     .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/banner/hero.jpg');
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/banner/hero-tablet.jpg');
     }
 }
 
@@ -382,13 +381,13 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/banner/hero@2x.jpg');
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/banner/hero-tablet@2x.jpg');
     }
 }
 
 @media screen and (min-width: 1158px) {
     .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/banner/hero.jpg');
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/banner/hero-desktop.jpg');
     }
 }
 
@@ -396,7 +395,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 screen and (min-resolution: 192dpi) and (min-width: 1158px),
 screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/banner/hero@2x.jpg');
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/banner/hero-desktop@2x.jpg');
     }
 }
 
@@ -764,6 +763,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 .footer {
     background-color: #2e2f42;
     padding: 100px 0;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .footer-wrapper {
@@ -775,6 +776,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 
 .footer-logo-wrapper {
     padding: 0;
+    margin-right: 180px;
 }
 
 .footer-logo {
@@ -792,10 +794,11 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 
 .footer-social-media {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     gap: 16px;
+    margin-right: auto;
 }
 
 .footer-social-media-headline {
@@ -803,6 +806,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center;
     color: #ffffff;
 }
 
@@ -836,7 +840,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 
 .footer-subscribe {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     gap: 16px;
@@ -919,8 +923,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
         align-items: baseline;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: center;
-        gap: 80px;
+        gap: unset;
+        padding-left: 15px;
     }
 
     .footer-subscribe {
@@ -986,12 +990,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 
 .modal-close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-form {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .form-description {
@@ -1124,6 +1122,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 }
 
 .form-submit {
+    display: block;
     min-width: 169px;
     height: 56px;
     font-weight: 500;
@@ -1134,6 +1133,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     cursor: pointer;
     border-radius: 4px;
     padding: 16px 32px;
+    margin: 0 auto;
     background-color: #4D5AE5;
     color: #ffffff;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
