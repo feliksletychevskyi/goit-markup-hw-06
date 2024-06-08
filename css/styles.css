@@ -61,9 +61,17 @@ button {
     margin-right: auto;
 }
 
+.section-paddings {
+    padding: 96px 0;
+}
+
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
+    }
+
+    .section-paddings {
+        padding: 96px 0;
     }
 }
 
@@ -102,6 +110,7 @@ button {
     text-transform: uppercase;
     color: #4d5ae5;
     display: block;
+    padding: 17px 0;
 }
 
 .btn-burger {
@@ -770,17 +779,19 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 .footer-wrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
     gap: 72px;
 }
 
 .footer-logo-wrapper {
     padding: 0;
-    margin-right: 180px;
 }
 
 .footer-logo {
     display: block;
+    margin-bottom: 16px;
+    text-align: center;
 }
 
 .footer-text {
@@ -794,11 +805,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 
 .footer-social-media {
     display: flex;
-    align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     gap: 16px;
-    margin-right: auto;
 }
 
 .footer-social-media-headline {
@@ -840,7 +849,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 
 .footer-subscribe {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
     gap: 16px;
@@ -907,14 +916,22 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     .footer-wrapper {
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: center;
+        align-items: baseline;
         gap: 72px 24px;
         padding-left: 108px;
+    }
+
+    .footer-logo {
+        text-align: left;
     }
 
     .footer-form {
         flex-direction: row;
         align-items: center;
+    }
+
+    .footer-social-media-headline {
+        text-align: left;
     }
 }
 
@@ -929,6 +946,22 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 
     .footer-subscribe {
         flex-direction: column;
+    }
+
+    .footer-logo-wrapper {
+        margin-right: 120px;
+    }
+
+    .footer-logo {
+        text-align: left;
+    }
+
+    .footer-social-media {
+        margin-right: auto;
+    }
+
+    .footer-social-media-headline {
+        text-align: left;
     }
 }
 
